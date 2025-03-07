@@ -4,7 +4,7 @@ import java.lang.*;
 pipeline {
 
     parameters {
-        string defaultValue: '', description: 'Environment', name: 'env_name', trim: true    
+        string defaultValue: 'server1', description: 'Environment', name: 'env_name', trim: true    
     }
 
     stages("Infra creation") {
