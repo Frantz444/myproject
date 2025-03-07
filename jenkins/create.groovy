@@ -61,7 +61,7 @@ pipeline {
 
         failure {
             echo "failure"
-			// some success email
+			// some failure email
         }
 
         always {
