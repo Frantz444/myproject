@@ -9,7 +9,7 @@ pipeline {
 
     stages("Infra creation") {
 
-        stage ("Read Configs") {
+        stage ("Read configs") {
             steps {
                 script {
                     propertiesFile = readFile "${WORKSPACE}/configs/${env_name}/config.ini"
