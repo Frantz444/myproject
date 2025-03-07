@@ -30,14 +30,14 @@ pipeline {
 
                         sh script: """
                             terraform plan \\
-                                        -var VPCID="${VPCID}" \\
-                                        -var InstanceCount="${InstanceCount}" \\
+                                -var VPCID="${VPCID}" \\
+                                -var InstanceCount="${InstanceCount}" \\
                         """
 
                         sh script: """
                             terraform apply -auto-approve\\
-                                        -var VPCID="${VPCID}" \\
-                                        -var InstanceCount="${InstanceCount}" \\
+                                -var VPCID="${VPCID}" \\
+                                -var InstanceCount="${InstanceCount}" \\
                         """
                     }
                 }
