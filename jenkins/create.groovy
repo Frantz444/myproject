@@ -47,7 +47,7 @@ pipeline {
         stage('Configure resources') {
 			steps{
 				script {
-					### some resources config after creation
+					// some resources config after creation
 				}
 			}
         }
@@ -55,18 +55,18 @@ pipeline {
 
     post {
         success {
-            echo "SUCCESS"
-			### some success email
+            echo "success"
+            // some success email
         }
 
         failure {
-            echo "FAILURE"
-			### some success email
+            echo "failure"
+			// some success email
         }
 
         always {
             cleanWs(deleteDirs: true, disableDeferredWipeout:true )
-            echo "ALWAYS"
+            echo "clean workspace"
         }
     }
 }
